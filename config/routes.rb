@@ -1,13 +1,19 @@
 Rails.application.routes.draw do
+  get 'home/contacts'
   get 'articles/new'
-
   get 'home/index'
+  get 'contacts/index'
+
+  resources :articles
+  resource  :contacts, only: [:new, :create]
+
+  root 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'home#index'
+   #root 'home#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -16,7 +22,7 @@ Rails.application.routes.draw do
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
-     resources :articles
+     #
 
   # Example resource route with options:
   #   resources :products do
