@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'contacts/index'
 
   resources :articles
-  resource  :contacts, only: [:new, :create]
+  resource  :contacts, only: [:new, :create], path_names: {:new => ''}
 
   root 'home#index'
 
