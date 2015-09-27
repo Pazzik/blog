@@ -5,4 +5,12 @@ class HomeController < ApplicationController
   def contacts
 
   end
+
+  def terms
+
+  end
+
+  def about
+
+  end
 end
