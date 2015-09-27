@@ -1,0 +1,2 @@
+# blog  initgit add README.mdgit commit -m "first commit"git remote add origin git@github.com:Pazzik/blog.gitgit push -u origin master
+# blog  initgit add README.mdgit commit -m "first commit"git remote add origin git@github.com:Pazzik/blog.gitgit push -u origin master
