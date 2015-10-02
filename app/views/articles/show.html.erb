@@ -1,4 +1,7 @@
 <h2>Article <%= @article.id %></h2>
+
+<%= image_tag @article.picture.url(:medium) %>
+
 <p>
   <h4><%= @article.title %></h4>
   <a><%= @article.text%> </a>
