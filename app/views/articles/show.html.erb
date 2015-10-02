@@ -1,0 +1,7 @@
+<h2>Article <%= @article.id %></h2>
+<p>
+  <h4><%= @article.title %></h4>
+  <a><%= @article.text%> </a>
+</p>
+
+<a href="/articles">Full list</a>  <a href="/articles/<%= @article.id %>/edit">Edit article</a>
