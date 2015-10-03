@@ -1,7 +1,11 @@
 <h2>Article <%= @article.id %></h2>
 
+<%= video_tag @article.video.url, :size => "320x240", :controls => true, :autobuffer => true, :preload => "none" %>
+
+<br/>
 <%= image_tag @article.picture.url(:medium) %>
 
+<br/>
 <p>
   <h4><%= @article.title %></h4>
   <a><%= @article.text%> </a>
