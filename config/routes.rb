@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   resource  :contacts, only: [:new, :create], path_names: {:new => ''}
 
 #  root 'home#index'
-  root to: "home#index"
+  root to: "articles#index"
 
 
   # The priority is based upon order of creation: first created -> highest priority.
