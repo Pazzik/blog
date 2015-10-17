@@ -27,7 +27,7 @@ class ArticlesController < ApplicationController
   end
 
   def destroy
-    get_article
+    @article = Article.find(params[:id])
     @article.destroy
 
     redirect_to articles_path
@@ -44,7 +44,7 @@ class ArticlesController < ApplicationController
 
   private
   def article_params
-    params.require(:article).permit(:title, :text, :picture, :video)
+    params.require(:article).permit(:title, :text)
   end
 
   def get_article

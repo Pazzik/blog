@@ -1,4 +1,7 @@
 <h2>Articles list</h2>
+
+<%= link_to 'New Article', new_article_path  %>
+
 <% @articles.each do |a| %>
     <p>
     	<%= image_tag a.picture.url(:thumb) %><br/>
