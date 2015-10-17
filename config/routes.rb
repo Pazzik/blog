@@ -10,7 +10,12 @@ Rails.application.routes.draw do
   get '/about' => 'home#about'
 
 
-  resources :articles
+  resources :articles do
+    resources :comments, only: [:create]
+  end
+
+
+
   resource  :contacts, only: [:new, :create], path_names: {:new => ''}
 
 #  root 'home#index'
