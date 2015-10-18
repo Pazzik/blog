@@ -11,7 +11,7 @@
 
 <% @article.comments.each do |comment|%>
     <p><%= comment.body %></p>
-    Added by <%= comment.author  %>
+    <i>Added by <%= comment.author  %></i>
     <hr/>
 <% end %>
 
