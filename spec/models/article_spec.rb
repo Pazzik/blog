@@ -13,8 +13,16 @@ describe Article do
 	describe "#subject" do
 		it "returns the article title" do
 			article = create(:article, title: 'Lorem ipsum')
-
+ 
 			expect(article.subject).to eq 'Lorem ipsum'
+		end
+	end
+
+	describe "#last_comment" do
+		it "returns last comment" do
+			article = create(:article_with_comments)
+
+			expect(article.last_comment.body).to eq "comment body 3"
 		end
 	end
 end	

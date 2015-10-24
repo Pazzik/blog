@@ -24,4 +24,8 @@ class Article < ActiveRecord::Base
   def subject
     title    
   end
+
+  def last_comment
+    comments.last
+  end
 end
