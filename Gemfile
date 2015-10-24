@@ -47,6 +47,7 @@ end
 
 group :test do 
 	gem 'shoulda-matchers', "< 3.0.0", require: false
+	gem 'factory_girl_rails'
 end
 
 group :development do
