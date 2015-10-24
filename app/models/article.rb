@@ -1,8 +1,8 @@
 class Article < ActiveRecord::Base
 
   has_many :comments
- # validates :title, presence: true
- # validates :text, presence: true
+  validates :title, presence: true
+  validates :text, presence: true
 
   has_attached_file :picture, :styles => { :medium => "300x300>", :thumb => "100x100>" }
   has_attached_file :video, styles: {
